@@ -1,8 +1,8 @@
 ### 1.Determine the highest normal form of this relation scheme. The relation scheme student Performance (StudentName, CourseNo, EnrollmentNo, Grade) hasthe following functional dependencies: StudentName, courseNo → grade EnrollmentNo, courseNo → grade StudentName →EnrollmentNo EnrollmentNo →StudentName
 #### Answer: 
--Let’s assume StudentName, courseNo, EnrollmentNo, grade as a,b,c,d respectively.
--Therefore the relation seems:ab->d, cb->d, a->c, c->a. 
--Thus there are two Candidate keys, ab and cb. 
+* -Let’s assume StudentName, courseNo, EnrollmentNo, grade as a,b,c,d respectively.
+* -Therefore the relation seems:ab->d, cb->d, a->c, c->a. 
+*-Thus there are two Candidate keys, ab and cb. 
 -Now we can see ab->d and cb->d satisfy the condition of BCNF as LHS is superkey in both the relations. 
 -But, a->c and c->a, doesn’t satisfy the conditions of BCNF. 
 -Hence we check for 3NF for these two Functional Dependencies.
