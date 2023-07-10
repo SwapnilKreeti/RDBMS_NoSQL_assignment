@@ -9,7 +9,8 @@
 * As c and a on RHS of both the Functional Dependencies are prime attributes, they satisfy the conditions of 3NF. 
 * Hence the highest normal form is 3NF.
 
-### 2.Suppose you are given a relation R= (A, B, C, D, E ) with the following functional dependencies:{CE →D, D→B, C →A} a. Find all candidate keys. 
+### 2.Suppose you are given a relation R= (A, B, C, D, E ) with the following functional dependencies:{CE →D, D→B, C →A} 
+### a. Find all candidate keys. 
 #### Answer:
 * We can see that only the attributes C and E are present only on LHS. 
 * C alone cannot determine all the other attributes.Thus, C → C 
@@ -39,10 +40,10 @@
 
 ### 4.Write the advantages and disadvantages of normalization. 
 #### Answer:  
-* i.Advantages are as follows- Data Consistency: Normalization helps maintain data consistency by minimizing redundancy and eliminating data anomalies such as update, insert, and delete anomalies. This ensures that data remains accurate and up-to-date.
+* Advantages are as follows- Data Consistency: Normalization helps maintain data consistency by minimizing redundancy and eliminating data anomalies such as update, insert, and delete anomalies. This ensures that data remains accurate and up-to-date.
 * Efficient Data Storage: Normalization reduces data duplication by organizing data into multiple smaller tables. This leads to efficient storage utilization, as each piece of information is stored only once. It helps optimize database storage and improves overall system performance.
 * Improved Data Integrity: By eliminating redundancy and maintaining relationships through normalization, data integrity is improved. Changes made to data are automatically reflected in all relevant places, reducing the risk of inconsistencies or conflicting information.  
-* ii. Disadvantages are as follows- Increased Complexity: Normalization can increase the complexity of queries involving multiple tables. As data is spread across different tables, more complex joins are often required to retrieve desired information. This can affect query performance and increase the development and maintenance complexity of the database. 
+* Disadvantages are as follows- Increased Complexity: Normalization can increase the complexity of queries involving multiple tables. As data is spread across different tables, more complex joins are often required to retrieve desired information. This can affect query performance and increase the development and maintenance complexity of the database. 
 * Performance Overhead: In highly normalized databases, multiple joins are required to retrieve related data, which can impact query performance, especially for complex queries or large datasets. Denormalization may be necessary in certain scenarios to improve performance at the expense of some redundancy.
 
 ### 5.Determine the decomposition. Consider the schema R = (S T U V) and the dependencies S → T, T → U, U → V, and V → S. Let R = (R1 and R2) be a decomposition such that R1 ∩ R2 ≠ ∅ .
